@@ -1,0 +1,11 @@
+<h1>Baked by {{onecake.name}}</h1>
+<img src="{{onecake.url}}" style="height: 480px;width:600px;display: inline-block">
+<div style="display:inline-block;height: 500px;;overflow-y: scroll">
+    <p>Average rating : {{ave}}</p>
+    <br>
+    <h3>comments:</h3>
+    <div *ngFor="let i of rate">
+        <p>{{i.comment}}</p>
+        <p>{{i.star}} stars</p>
+    </div>
+</div>
